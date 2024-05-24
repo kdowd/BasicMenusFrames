@@ -1,0 +1,32 @@
+﻿<Window x:Class="MenusFrames.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MenusFrames"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu FontSize="24" Height="60" Width="800" Name="menu1"  HorizontalAlignment="Left" VerticalAlignment="Top" Background="Gray" BorderThickness="2">
+            <Menu.BitmapEffect>
+                <DropShadowBitmapEffect />
+            </Menu.BitmapEffect>
+
+            <MenuItem Name="One" Header="_View Stuff" Click="NavigateToPage" />
+
+
+
+
+            <MenuItem Name="Two" Header="_Update Stuff" Click="NavigateToPage"/>
+
+
+
+
+        </Menu>
+
+
+        <Frame Name="pageFrame" Margin="0,80,0,0"  Source="Page1.xaml" NavigationUIVisibility="Hidden" ></Frame>
+
+
+    </Grid>
+</Window>
